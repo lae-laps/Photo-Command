@@ -131,10 +131,9 @@ def channel(canal, grado):
 def help():
     try:
         help = open("help.txt", "r")
-        print(help)
+        print(help.read())
         help.close()
     except:
-        help.close()
         print("The \"help.txt\" file couldn't be opened ")
 
 def show():
