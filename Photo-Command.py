@@ -4,12 +4,12 @@ print()
 print("=============")
 print("PHOTO-COMMAND")
 print("=============")
+print("Welcome to Photo-Command. To start import a Photo ↴")
 print()
-print("Import ↴")
 
-commands = ["blur", "blur2", "canal", "contraste", "exit", "exp", "grid", "help", "invertir", "saturacion", "save", "show",]
+commands = ["blur", "blur2", "channel", "contrast", "exit", "exp", "grid", "help", "invert", "saturation", "save", "show",]
 
-foto = str(input("Nombre de fichero: "))
+foto = str(input("File Name / Path: "))
 
 tipo = foto[-4:]
 
@@ -51,7 +51,7 @@ def help():
 
     help.close()
 
-def invertir():
+def invert():
     for i in range(img.size[0]):
         for j in range(img.size[1]):
             pixR[i, j] = 255 - pixR[i, j]
@@ -70,45 +70,6 @@ def exp(signo, grado):
                 pixR[i, j] = int(pixR[i, j] / g)
                 pixG[i, j] = int(pixG[i, j] / g)
                 pixB[i, j] = int(pixB[i, j] / g)
-
-def saturacion(signo, grado):
-
-
-
-def contraste(signo, grado):
-    g = float(grado)
-    for i in range(img.size[0]):
-        for j in range(img.size[1]):
-            if signo == "+":
-                if pixR[i, j] >= 128:
-                    pixR[i, j] = int(pixR[i, j] + g)
-                else:
-                    pixR[i, j] = int(pixR[i, j] - g)
-                if pixG[i, j] >= 128:
-                    pixG[i, j] = int(pixG[i, j] + g)
-                else:
-                    pixG[i, j] = int(pixG[i, j] - g)
-                if pixB[i, j] >= 128:
-                    pixB[i, j] = int(pixB[i, j] + g)
-                else:
-                    pixB[i, j] = int(pixB[i, j] - g)
-
-            if signo == "-":
-
-
-                if pixR[i, j] >= 128:
-                    pixR[i, j] = int(pixR[i, j] - g)
-                else:
-                    pixR[i, j] = int(pixR[i, j] + g)
-                if pixG[i, j] >= 128:
-                    pixG[i, j] = int(pixG[i, j] - g)
-                else:
-                    pixG[i, j] = int(pixG[i, j] + g)
-                if pixB[i, j] >= 128:
-                    pixB[i, j] = int(pixB[i, j] - g)
-                else:
-                    pixB[i, j] = int(pixB[i, j] + g)
-
 
 def grid(space, light):
     space = int(space)
@@ -152,7 +113,7 @@ def blur2(size):
             pixB[i, j] = int(sumB / n2)
     print()
 
-def canal(canal, grado):
+def channel(canal, grado):
     g = float(grado)
     if canal == "R":
         for i in range(img.size[0]):
