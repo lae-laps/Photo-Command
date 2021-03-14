@@ -11,6 +11,10 @@ It has a series of commands for the several procedures it can do
 
 ``` % git clone https://github.com/martin-otero/Photo-Command ```
 
+``` % cd Photo-Command```
+
+``` % python3 Photo-Command.py```
+
 ### Use
 
   * help → Returns help about the ussage of the program and all of it's functions
