@@ -128,6 +128,14 @@ def channel(canal, grado):
             for j in range(img.size[1]):
                 pixB[i, j] = int(pixB[i, j] * g)
 
+def help():
+    try:
+        help = open("help.txt", "r")
+        print(help)
+        help.close()
+    except:
+        help.close()
+        print("The \"help.txt\" file couldn't be opened ")
 
 def show():
     img = Image.merge("RGB", (imgR, imgG, imgB))
