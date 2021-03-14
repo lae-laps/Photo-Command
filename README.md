@@ -1,9 +1,7 @@
 # Photo-Command
 
-A simple terminal application of extensive photo editing made fast and easy
+A simple terminal application fort extensive photo editing made fast and easy
 
-Photo-Command is a simple terminal application made in python for basic photo editing
-It has a series of commands for the several procedures it can do
 
 ### Installation
 
