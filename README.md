@@ -7,7 +7,7 @@ It has a series of commands for the several procedures it can do
 
 ### Installation
 
-``` % cd to the directory for installation ```
+``` % cd to the directory of installation ```
 
 ``` % git clone https://github.com/martin-otero/Photo-Command ```
 
