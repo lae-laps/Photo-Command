@@ -1,6 +1,6 @@
 # Photo-Command
 
-A simple terminal application fort extensive photo editing made fast and easy
+A simple command line application fort extensive photo editing made fast and easy
 
 
 ### Installation
