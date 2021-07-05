@@ -1,7 +1,14 @@
-#cd to the directory of installation
+# Ejecuta este script en el directorio de descarga para instalar las librerías requeridas
 
-git clone https://github.com/martin-otero/Photo-Command
+chmod +x main.py
 
-cd Photo-Command
+{ # try
 
-python3 Photo-Command.py
+    pip3 install pillow &&
+    #save your output
+
+} || { # catch
+    pip3 install PIL 
+}
+
+python3 main.py
